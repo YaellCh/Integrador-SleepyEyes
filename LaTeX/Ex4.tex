@@ -1,16 +1,15 @@
 \section{Resolución Problema 4}
+Dado un numero decimal de $n$ bits regresar su equivalente en binario.
 
-\subsection\textbf{Descripción del problema}
+
+\subsection{\textbf{Descripción del problema:}}
 Consiste en diseñar un enfoque matemático que dado un número decimal, facilite su conversión a su equivalente en binario. Esta problemática requiere el uso de principios fundamentales para abordar eficazmente el desafío en cuestión. Desarrollando un código en Java que emplee una solución formal y eficiente que realice la conversión precisa de números decimales a binarios, incorporando conceptos algebraicos y numéricos relevantes para lograr una comprensión clara y estructurada del proceso.
 
 
-\subsection\textbf{Definición de la solución}
+\subsection{\textbf{Definición de solución:}}
 La solución propuesta para el problema se basa en la aplicación de un proceso matemático eficiente y estructurado donde se emplean tres funciones fundamentales para lograr la conversión precisa.
 
 En primer lugar, la función \texttt{divisiónSucesiva} se encarga de realizar la división sucesiva por 2 del número decimal, registrando los residuos en el proceso. Después, la función \texttt{registroResiduos} utiliza estos residuos para construir la representación binaria del número. Finalmente, la función \texttt{obtenerBinario} organiza los resultados para la representación binaria.
-
-
-\subsection\textbf{Ecuación de la recta}
 Para convertir un número decimal a binario mediante la división sucesiva por 2, puedes utilizar la siguiente ecuación.
 \ignorespaces
 residuo $m$ - cociente $n-1$ \mod 2.
@@ -20,23 +19,24 @@ Donde $\text{cociente}_n$ es el cociente en la enésima división, y $\text{coci
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 6 cm]{./Latex-imágenes/numeroB.png}
+    \includegraphics[width = 6 cm]{Latex-imágenes/numeroB.png}
     \caption{Calcula número Binario}
     \label{fig:Calcula número Binario}
 \end{figure}
 
 
-\subsection\textbf{Desarrollo del código}
-
+\subsection{\textbf{Diseño de la solución:}}
 Para poder entender como debemos empezar el código tenemos que empezar por diseñar el diagrama de flujo 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 6 cm]{./Latex-imágenes/DiagramaBinario.png}
+    \includegraphics[width = 6 cm]{Latex-imágenes/DiagramaBinario.jpeg}
     \caption{Diagrama de flujo para la solución}
     \label{fig: Calcular número Binario}
 \end{figure}
 
+
+\subsection{\textbf{Desarrollo de la solución:}}
 En este fragmento, se utiliza un Scanner para obtener la entrada del usuario, que es un número decimal entero, ya sea positivo o negativo
 \begin{javaCode}
 
@@ -119,8 +119,9 @@ Finalmente se imprime el resultado final en formato binario.
    System.out.println("\nEl número convertido a binario es: " + binario);
 \end{javaCode}
 
-\subsection\textbf{Pruebas}
 
+\subsection{\textbf{Depuración y pruebas:}}
+Se realizaron las pruebas de decimal a binario para encontrar errores
 \begin{tabular}{|c|c|}
 \hline
 \textbf{Número Decimal} & \textbf{Número Binario} \\
@@ -133,7 +134,4 @@ Finalmente se imprime el resultado final en formato binario.
 \hline
 \end{tabular}
 \\
-\\para las pruebas de decimal a binario
-
-\section\textbf{Conclusión}
-Se desarrollo una solución para el problema de la conversión de números decimales a su representación binaria. En la implementación se utilizo de bucles y operaciones matemáticas para llevar a cabo la división sucesiva por 2, identificar los residuos y construir la representación binaria del número. El resultado se expresa con claridad y  siendo capaz de manejar tanto números positivos como negativos. Además, se han abordado casos especiales, como el número cero, asegurando la precisión de los resultados. 
+\\
