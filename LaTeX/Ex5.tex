@@ -30,7 +30,7 @@ Finalmente, el programa imprime el resultado de la conversión, es decir, el nú
 \subsection{\textbf{Desarrollo de la solución:}}
 El desarrollo del código del programa en Java para la conversión de números binarios a decimales:
 
-\begin{lstlisting}[style=javaStyle]
+\begin{javaCode}[style=javaStyle]
 import java.util.Scanner;
 import java.math.BigInteger;
 
@@ -38,12 +38,12 @@ public class NewClass {
     public static void main(String[] args) {
         Scanner bin = new Scanner(System.in);
         boolean continuar = true;
-\end{lstlisting}
+\end{javaCode}
 En esta paso en el programa son colocadas las variables $Scanner$ $BigInteger$
 las cuales ayudaran al correr el programa
 
 Se solicita al usuario ingresar un numero binario
-\begin{lstlisting}[style=javaStyle]
+\begin{javaCode}
 // Bucle que permite al usuario ingresar números binarios hasta que ingrese 'x'
 
         while (continuar) {
@@ -51,41 +51,41 @@ Se solicita al usuario ingresar un numero binario
             System.out.print("Ingrese un número en binario (o 'x' para terminar ): ")
             
             String entrada = bin.nextLine();
-\end{lstlisting}
+\end{javaCode}
 
  La variable $while$ es utilizada como un "mientras" esta mantiene un bucle regresando a pedirnos un numero binario para su conversión a binario
 
-\begin{lstlisting}[style=javaStyle]
+\begin{javaCode}
                  // Si se ingresa 'x', el bucle se detiene;
             if (entrada.equalsIgnoreCase("x")) {
                 continuar = false;
                 continue;
             }
-\end{lstlisting}
+\end{javaCode}
 
 En esta línea, se declara una variable llamada decimal del tipo BigInteger. Se utiliza para almacenar el valor decimal resultante después de convertir el número binario ingresado. La función convertirBinarioADecimal se llama con el argumento entrada, que es el número binario ingresado por el usuario.
 
-\begin{lstlisting}[style=javaStyle]
+\begin{javaCode}
  // llama al método convertirBinarioADecimal para convertir el número binario ingresado a decimal
  
             BigInteger decimal = convertirBinarioADecimal(entrada);
             
-\end{lstlisting}
+\end{javaCode}
 
  Esta línea imprime en la consola el mensaje "El número en decimal es: " seguido del valor almacenado en la variable decimal. Es decir, muestra el resultado de la conversión en formato decimal.
 
-\begin{lstlisting}[style=javaStyle]
+\begin{javaCode}
 System.out.println("El número en decimal es: " + decimal);
 
-\end{lstlisting}
+\end{javaCode}
 
 Estas líneas definen el método convertirBinarioADecimal, que toma un argumento de tipo String llamado binario. El método crea un nuevo objeto BigInteger utilizando el constructor que toma dos argumentos: el número binario (binario) y la base (2) que se utiliza para interpretar el número binario y convertirlo a decimal. 
 
-\begin{lstlisting}[style=javaStyle]
+\begin{javaCode}
 lic static BigInteger convertirBinarioADecimal(String binario) {
         return new BigInteger(binario, 2);
 
-\end{lstlisting}
+\end{javaCode}
 
 \text La fórmula se basa en el hecho de que cada posición en un número binario representa una potencia de 2. El dígito en la posición más a la derecha tiene un peso de \(2^0\), el siguiente dígito tiene un peso de \(2^1\), el siguiente tiene un peso de \(2^2\), y así sucesivamente.
 \space
