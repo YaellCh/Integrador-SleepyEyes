@@ -11,16 +11,16 @@ Descripción de Contenido:
 
 # Yael Antonio Chávez Atanacio
 
-# #[Yael Pagina Personal](https://yaellch.github.io/)
+## [Yael Pagina Personal](https://yaellch.github.io/)
 
 # Maldonado Olguin Irving 
 
-# #[Iriving Pagina Personal](https://github.com/ignaciomal)
+## [Iriving Pagina Personal](https://github.com/ignaciomal)
 
 # Cruz Martinez Alejandro
 
-# #[Alejandro Pagina Personal](https://alejandrocruzmartinez.github.io/)
+## [Alejandro Pagina Personal](https://alejandrocruzmartinez.github.io/)
 
 # Hernández Martínez Brayan
 
-# #[Brayan Pagina Personal](https://brianherna.github.io/)
+## [Brayan Pagina Personal](https://brianherna.github.io/)
