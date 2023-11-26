@@ -109,20 +109,18 @@ Finalmente, se imprime la ecuación de la recta y el ángulo interno en grados. 
 \end{javaCode}
 La función String.format() formatea un número decimal según el formato especificado en la cadena de formato.(En este caso 3f es el formato que indica que el número debe redondearse a tres). decimales
 \subsection{\textbf{Depuración y pruebas:}}
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|c|c|}
-        \hline
-        \textbf{Prueba} & \textbf{Punto 1} & \textbf{Punto 2} & \textbf{Pendiente (\(m\))} & \textbf{Intersección (\(b\))} & \textbf{Ángulo (\(\alpha\))} & \textbf{Ecuación de la Recta} \\
-        \hline
-        1 & (1, 2) & (3, 4) & 1.0 & 1.0 & 45.000 & \(y = x + 1\) \\
-        \hline
-        2 & (-1, 0) & (2, -3) & -1.0 & 1.0 & -45.000 & \(y = -x + 1\) \\
-        \hline
-        3 & (-4, 1) & (1, 4) & 0.6 & 3.4 & 30.964 & \(y = -x + 5\) \\
-        \hline
-        % Pruebas necesarias
-    \end{tabular}
-    \caption{Pruebas para el programa de ecuación de la recta}
-    \label{tab:pruebas}
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \textbf{Punto1} & \textbf{Punto2} & \textbf{ (\(m\))} & \textbf{(\(b\))} & \textbf{ (\(\alpha\))} & \textbf{Recta} \\
+    \hline
+    (-1, 0) & (2, -3) & -1.0 & 1.0 & -45.000 & \(y = -x + 1\) \\
+    \hline
+    (-4, 1) & (1, 4) & 0.6 & 3.4 & 30.964 & \(y = -x + 5\) \\
+    \hline
+    (3, -2) & (0, 1) & -1.0 & 3.0 & -54.738 & \(y = -x + 1\) \\
+    \hline
+    % Pruebas necesarias
+\end{tabular}
+\caption{Pruebas para el programa de ecuación de la recta}
+\label{tab:pruebas}
 \end{table}
