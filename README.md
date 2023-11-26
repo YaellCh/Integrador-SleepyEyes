@@ -7,7 +7,7 @@ Descripción de Contenido:
   
 - *Carpeta LaTeX*: En la carpeta "LaTeX" encontrarás los archivos relacionados con la documentación del proyecto usando LaTeX.
 
-# Integrantes 
+# Integrantes del equipo 
 
 # Yael Antonio Chávez Atanacio
 
